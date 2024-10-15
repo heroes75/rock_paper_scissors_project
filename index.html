@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body style="background-color: black; color: #eee;">
+    <style>
+        html {
+            height: 100%;
+        }
+        * {
+            box-sizing: border-box;
+            border: 3px solid red
+        }
+        body {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100%;
+        }
+        #result {
+            max-width: 100px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    </style>
+ </head>
+ <body style="background-color: black; color: #eee; border: 3px solid green">
+  <div class="container">
+    <p>Human Score:<span class="humanScore"></span></p>
+    <p>computer Score:<span class="computerScore"></span></p>
+    <button id="paper">Paper</button>
+    <button id="rock">Rock</button>
+    <button id="scissors">Scissors</button>
+    <div id="result"></div>
+  </div>
     <script src="script.js"></script>
-</body>
+ </body>
 </html>
